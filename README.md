@@ -1,19 +1,22 @@
 # Show authorname on hover
 
-Hover over an author to see their name
+Hover over some colored text to see their authorname.
 
-# Other functionality
+# Original work
 
-Shows the author color on hover
-Supports fast switching between hovers (Doesn't depend on native browser support)
+[JohnMcLear](https://github.com/JohnMcLear/ep_author_hover)
 
-# Why did I rewrite this?
-I don't really like plugins that depdend on manipulating the ACE inner DOM, rewriting this plugin and using events meant I could still have hover functionality without the risk of running into nasty ACE issues down the line.  It also meant that as new authors joined and updated their name I could update hte hovers in real time.  Previous attempts at writing this plugin have required a browser refresh to know who authors are, that wasn't good enough for me.
+# Differences from original
+
+* Fix user color issue when searching from historical
+* Fix warning issue (console) when <span> are not found (.closest())
+* Fix "Me" and "Anonymous user" color (transparent to white)
+* Fix author id length issue
+* Opacity a bit darker (better if lot of text in the pad)
+* Include JQTip libraries for futur change
 
 # TODO
 
-* use JQTip
-* Your ideas here..
+* use JQTip (work in progress...)
 * Test in IE
 * Settings for font size/background color switch
-* Your sponsorship here..

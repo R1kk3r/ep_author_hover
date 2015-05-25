@@ -3,10 +3,12 @@
   {
     "name": "ep_author_hover",
     "hooks" : {
-      "eejsBlock_mySettings": "ep_author_hover/index"
+      "eejsBlock_mySettings": "ep_author_hover/index:eejsBlock_mySettings",
+			"eejsBlock_scripts" : "ep_author_hover/index:eejsBlock_scripts",
+			"eejsBlock_styles" : "ep_author_hover/index:eejsBlock_styles"
     },
     "client_hooks" : {
-      "postAceInit":"ep_author_hover/static/js/index"
+      "postAceInit":"ep_author_hover/static/js/index:postAceInit"
     }
   }]
 }
